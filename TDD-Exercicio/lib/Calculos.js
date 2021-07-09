@@ -63,7 +63,21 @@ class Calculos {
       return this.DESENVOLVEDOR(salario).calculo;
   }
 
+
+  CalculoDBA(salario){
+    return this.DBA(salario).calculo;
+}
+
+
+CalculoGerente(salario){
+    return this.GERENTE(salario).calculo;
+}
+
  
+CalculoTestador(salario){
+    return this.TESTADOR(salario).calculo;
+}
+
 
 
 

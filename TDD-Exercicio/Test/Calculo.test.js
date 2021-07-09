@@ -21,14 +21,14 @@ test('Funcionario desenvolvedor salario menor que 3000', () => {
 
 test('Funcionario DBA salario maior igual 2000', () => {
   
-    expect(calc.Calc("DBA", 2500)).toBe(1875)
+    expect(calc.CalculoDBA(2500)).toBe(1875)
     
 }); 
 
 
 test('Funcionario DBA salario menor que 2000', () => {
   
-    expect(calc.Calc("DBA", 1800)).toBe(1530)
+    expect(calc.CalculoDBA(1500)).toBe(1275)
     
 }); 
 
@@ -36,27 +36,27 @@ test('Funcionario DBA salario menor que 2000', () => {
 
 test('Funcionario Testador salario maior igual 2000', () => {
   
-    expect(calc.Calc("testador", 2500)).toBe(1875)
+    expect(calc.CalculoTestador(2500)).toBe(1875)
     
 }); 
 
 
 test('Funcionario Testador salario menor que 2000', () => {
   
-    expect(calc.Calc("testador", 1800)).toBe(1530)
+    expect(calc.CalculoTestador(1500)).toBe(1275)
     
 }); 
 
 test('Funcionario Gerente salario maior igual 5000', () => {
   
-    expect(calc.Calc("gerente", 5000)).toBe(3500)
+    expect(calc.CalculoGerente(5000)).toBe(3500)
     
 }); 
 
 
-test('Funcionario Gerente salario menor que 500', () => {
+test('Funcionario Gerente salario menor que 5000', () => {
   
-    expect(calc.Calc("gerente", 4000)).toBe(3200)
+    expect(calc.CalculoGerente(4000)).toBe(3200)
     
 }); 
 
