@@ -4,18 +4,24 @@ const validar = require('./CalculoValidator');
 
 class Calculos { 
 
+    Div(salario){
+       return salario / 100
+    }
+
+
+
     Porcentagem(salario){
            
         return {
   
-         DesenvolvedorMais3000: salario - (20 * salario /100),
-         DesenvolvedorMenos3000: salario - (10 * salario/ 100),
-         DBAmaiorMAis2000: salario - (25 * salario /100),
-         DBAMenor2000: salario - (15 * salario /100),
-         TestadorMAiro2000:  salario - (25 * salario /100),
-         TestadorMenor2000: salario - (15 * salario /100), 
-         GerenteMAior5000:  salario - (30 * salario /100),
-         GerenteMenor5000: salario - (20 * salario /100) 
+         DesenvolvedorMais3000: salario - 20 * this.Div(salario),
+         DesenvolvedorMenos3000: salario - 10 * this.Div(salario),
+         DBAmaiorMAis2000: salario - 25 * this.Div(salario),
+         DBAMenor2000: salario - 15 * this.Div(salario),
+         TestadorMAiro2000:  salario - 25 * this.Div(salario),
+         TestadorMenor2000: salario - 15 * this.Div(salario),
+         GerenteMAior5000:  salario - 30 * this.Div(salario),
+         GerenteMenor5000: salario - 20 * this.Div(salario),
 
 
         }
