@@ -6,14 +6,14 @@ class Calculos {
 
     Porcentagem(salario,desconto){
            
-   validar(salario)
+
 
         return salario - (desconto * salario /100)
     }
 
 
   DESENVOLVEDOR(salario){ 
- 
+    validar(salario)
 
    return{
 
@@ -27,7 +27,7 @@ class Calculos {
 
 
   GERENTE(salario){
-  
+    validar(salario)
     return{
  
     calculo: salario >= 5000 ? this.Porcentagem(salario,30) : this.Porcentagem(salario,20) 
@@ -38,7 +38,7 @@ class Calculos {
    }
  
    TESTADOR(salario){
-  
+    validar(salario)
     return{
  
     calculo: salario >= 2000 ? this.Porcentagem(salario,25) : this.Porcentagem(salario,15) 
@@ -53,7 +53,7 @@ class Calculos {
   
 
   DBA(salario){
-  
+    validar(salario)
     return{
  
     calculo: salario >= 2000 ? this.Porcentagem(salario,25) : this.Porcentagem(salario,15) 
