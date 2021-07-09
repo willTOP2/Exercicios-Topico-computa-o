@@ -7,10 +7,11 @@ class Calculos {
     Porcentagem(salario){
            
         return {
- 
-         //calculo: salario - (desconto * salario /100), 
+  
          DesenvolvedorMais3000: salario - (20 * salario /100),
-         DesenvolvedorMenos3000: salario - (10 * salario/ 100)
+         DesenvolvedorMenos3000: salario - (10 * salario/ 100),
+         DBAmaiorMAis2000: salario - (25 * salario /100),
+         DBAMenor2000: salario - (15 * salario /100)
 
         }
 
