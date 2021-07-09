@@ -1,6 +1,46 @@
 
 
-class Calculos {
+
+class Calculos { 
+
+    Porcentagem(salario,desconto){
+        return salario - (desconto * salario /100)
+    }
+
+
+  DESENVOLVEDOR(salario){
+  
+   return{
+
+   calculo: salario >= 3000 ? this.Porcentagem(salario,20) : this.Porcentagem(salario,10) 
+  }
+
+
+
+  }
+
+
+  
+
+  DBA(salario){
+  
+    return{
+ 
+    calculo: salario >= 2000 ? this.Porcentagem(salario,25) : this.Porcentagem(salario,15) 
+   }
+ 
+ 
+ 
+   }
+ 
+  
+  CalculoDev(salario){
+      return this.DESENVOLVEDOR(salario).calculo;
+  }
+
+ 
+
+
 
    Calc(cargo,salario){
 
