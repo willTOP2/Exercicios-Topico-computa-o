@@ -65,21 +65,25 @@ class Calculos {
 
 
   CalculoDev(salario){
+    validar(salario)
       return this.DESENVOLVEDOR(salario).calculo;
   }
 
 
   CalculoDBA(salario){
+    validar(salario)
     return this.DBA(salario).calculo;
 }
 
 
 CalculoGerente(salario){
+    validar(salario)
     return this.GERENTE(salario).calculo;
 }
 
  
 CalculoTestador(salario){
+    validar(salario)
     return this.TESTADOR(salario).calculo;
 }
 

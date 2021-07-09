@@ -5,7 +5,7 @@ const calculoSchema = new Schema({
     salario: {
         type: Number,
         required: true,
-        use: { nonNegative: val => val > 0 },
+        use: { nonNegative: val => val <= 0 },
         message: 'salario invalido'
     },
     
@@ -13,7 +13,7 @@ const calculoSchema = new Schema({
 
 function validar(salario) {
     const errors = calculoSchema.validate(salario);
-    if (errors.length > 0)
+    if (errors.length <= 0)
         throw errors;
 }
 
