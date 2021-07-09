@@ -3,7 +3,7 @@ const calculo = require('../lib/Calculos')
 
 const calc = new calculo()
 
-describe('Calculo', () => {
+describe('Calculadora Salario', () => {
     test('Funcionario desenvolvedor salario maior que 3000', () => {
   
     expect(calc.CalculoDev(5000)).toBe(4000)
@@ -12,9 +12,11 @@ describe('Calculo', () => {
 
 test('Funcionario desenvolvedor salario menor que 3000', () => {
   
-    expect(calc.Calc("desenvolvedor", 2500)).toBe(2250)
+    expect(calc.CalculoDev(2800)).toBe(2520)
     
 }); 
+
+
 
 
 test('Funcionario DBA salario maior igual 2000', () => {
