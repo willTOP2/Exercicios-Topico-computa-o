@@ -4,11 +4,17 @@ const validar = require('./CalculoValidator');
 
 class Calculos { 
 
-    Porcentagem(salario,desconto){
+    Porcentagem(salario){
            
+        return {
+ 
+         //calculo: salario - (desconto * salario /100), 
+         DesenvolvedorMais3000: salario - (20 * salario /100),
+         DesenvolvedorMenos3000: salario - (10 * salario/ 100)
 
+        }
 
-        return salario - (desconto * salario /100)
+ 
     }
 
 
@@ -17,7 +23,7 @@ class Calculos {
 
    return{
 
-   calculo: salario >= 3000 ? this.Porcentagem(salario,20) : this.Porcentagem(salario,10) 
+   calculo: salario >= 3000 ? this.Porcentagem(salario).DesenvolvedorMais3000 : this.Porcentagem(salario).DesenvolvedorMenos3000
 
   }
 
